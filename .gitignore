@@ -1,0 +1,8 @@
+## OS stuff
+.DS_Store
+
+## IDE stuff
+.idea
+
+## Output
+out/
