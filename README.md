@@ -3,6 +3,8 @@
 
 Simple project for converting normal text to sPonGeBOb tExT
 
+![Mocking SpongeBob](spongebob.jpeg)
+
 It uses _CUTTING EDGE™_ technology like *MARKOV CHAINS* to generate REALISTICⓇ SPonGeBoB text.️
 
 ## Getting it
