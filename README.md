@@ -7,7 +7,9 @@
 
 Simple project for converting normal text to sPonGeBOb tExT
 
-![Mocking SpongeBob](spongebob.jpg)
+<p align="center">
+  <img src="spongebob.jpg" alt="Mocking SpongeBob" width="300">
+</p>
 
 It uses _CUTTING EDGE_ technology like *MARKOV CHAINS™* to generate _REALISTIC_ SPonGeBoBⓇ text.️
 
