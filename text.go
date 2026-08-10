@@ -1,17 +1,13 @@
+// Package spongebob converts normal text into sPonGeBOb tExT.
 package spongebob
 
 import (
 	"bytes"
 	"math/rand"
-	"time"
 	"unicode"
 )
 
-func init() {
-	rand.Seed(time.Now().UTC().UnixNano())
-}
-
-// Text transforms a normal string into A spOnGEbOb sTrINg
+// Text transforms a normal string into A spOnGEbOb sTrINg.
 func Text(str string) string {
 	var result bytes.Buffer
 	upper := false

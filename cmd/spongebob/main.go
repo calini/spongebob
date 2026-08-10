@@ -3,9 +3,10 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/calini/spongebob/spongebob"
 	"os"
 	"strings"
+
+	"github.com/calini/spongebob"
 )
 
 func main() {
