@@ -1,0 +1,61 @@
+version: 2
+
+project_name: spongebob
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - main: ./cmd/spongebob
+    binary: spongebob
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - formats: [tar.gz]
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+
+checksum:
+  name_template: "checksums.txt"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^test:"
+      - "^chore:"
+
+release:
+  github:
+    owner: calini
+    name: spongebob
+
+brews:
+  - name: spongebob
+    repository:
+      owner: calini
+      name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    directory: .
+    homepage: "https://github.com/calini/spongebob"
+    description: "CLI for writing SPonGeBob TeXT"
+    license: "MIT"
+    commit_author:
+      name: Calin Ilie
+      email: calin@ilie.io
+    install: |
+      bin.install "spongebob"
+    test: |
+      system "#{bin}/spongebob", "test"
