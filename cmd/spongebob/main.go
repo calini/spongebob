@@ -15,7 +15,7 @@ func main() {
 		for i := range os.Args {
 			os.Args[i] = spongebob.Text(os.Args[i])
 		}
-		print(strings.Join(os.Args[1:], " "))
+		fmt.Println(strings.Join(os.Args[1:], " "))
 		os.Exit(0)
 	}
 
