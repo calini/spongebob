@@ -1,15 +1,28 @@
 # SPoNgEBoB
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcalini%2Fspongebob.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcalini%2Fspongebob?ref=badge_shield)
+
+[![CI](https://github.com/calini/spongebob/actions/workflows/ci.yml/badge.svg)](https://github.com/calini/spongebob/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/calini/spongebob)](https://github.com/calini/spongebob/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/calini/spongebob)](https://goreportcard.com/report/github.com/calini/spongebob)
+[![License](https://img.shields.io/github/license/calini/spongebob)](LICENSE.md)
 
 Simple project for converting normal text to sPonGeBOb tExT
 
 ![Mocking SpongeBob](spongebob.jpg)
 
-It uses _CUTTING EDGE™_ technology like *MARKOV CHAINS* to generate REALISTICⓇ SPonGeBoB text.️
+It uses _CUTTING EDGE_ technology like *MARKOV CHAINS™* to generate _REALISTIC_ SPonGeBoBⓇ text.️
 
 ## Getting it
+
+### Homebrew
+
 ```sh
-go get -u github.com/calini/spongebob
+brew install calini/tap/spongebob
+```
+
+### Go
+
+```sh
+go install github.com/calini/spongebob/cmd/spongebob@latest
 ```
 
 ## Using the CLI
@@ -21,7 +34,7 @@ spongebob "hello world"
 
 ## Building it manually
 ```sh
-go build -o ./spongebob
+go build -o ./spongebob ./cmd/spongebob
 
 ./spongebob "hello world"
 > hELlO wOrlD
@@ -32,8 +45,8 @@ go build -o ./spongebob
 package main
 
 import (
-	"fmt"	
-	
+	"fmt"
+
 	"github.com/calini/spongebob"
 )
 
@@ -41,6 +54,3 @@ func main() {
     fmt.Println(spongebob.Text("Hello world!"))
 }
 ```
-
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcalini%2Fspongebob.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcalini%2Fspongebob?ref=badge_large)
