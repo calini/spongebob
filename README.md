@@ -2,7 +2,6 @@
 
 [![CI](https://github.com/calini/spongebob/actions/workflows/ci.yml/badge.svg)](https://github.com/calini/spongebob/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/calini/spongebob)](https://github.com/calini/spongebob/releases/latest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/calini/spongebob)](https://goreportcard.com/report/github.com/calini/spongebob)
 [![License](https://img.shields.io/github/license/calini/spongebob)](LICENSE.md)
 
 Simple project for converting normal text to sPonGeBOb tExT
